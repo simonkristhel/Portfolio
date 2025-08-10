@@ -13,7 +13,7 @@
 
     <header class="navbar">
         <div class="logo">Kristhel Simon</div>
-        <nav>
+        <nav style="padding-right: 5%;">
             <a href="#home">Home</a>
             <a href="#about">About</a>
             <a href="#work">Work</a>
@@ -22,7 +22,7 @@
         </nav>
     </header>
 
-<section class="hero">
+<section class="hero" id="home" style="padding-top: 6%;">
 <div class="hero-text">
     <h3 style="font-weight: 300; font-stretch: expanded; font-size: 1.4rem; line-height: 1.2; margin-bottom: 0.3rem;">
         Hello, I’m Kristhel,
@@ -34,12 +34,13 @@
         based in the Philippines.
     </h3>
 
-    <div ><a href="resume.pdf" class="btn">Resume</a>
-    
-    <!-- Decorative border shape -->
-    <div style="width: 100px; height: 40px; border-radius: 6px;
-                   left: -5px; position: relative; top: -48px; border: 1px solid #474306;">
-    </div></div>
+<div style="position: relative; display: inline-block;">
+    <a href="Simon, Kristhel - RESUME.pdf" class="btn" style="position: relative; z-index: 1;">Resume</a>
+
+    <div class="btn_border" style="position: absolute; top: -5px; left: -5px; width: 100%; height: 100%; 
+              border-radius: 6px; border: 1px solid #474306; pointer-events: none; z-index: 2;">
+    </div>
+</div>  
 
 
 </div>
@@ -57,29 +58,151 @@
 </section>
 
 
+<section id="about" style="padding: 50px; max-width: 800px; margin: auto; text-align: center; margin-bottom: -5%;">
+    <h2 style="font-size: 3.5rem; margin-bottom: 20px;color: #f5ee84;">About Me.</h2>
+    <p style="font-size: 1.1rem; line-height: 1.6;">
+        I’m Kristhel, an <strong>Automation Specialist</strong> and <strong>Shopify Developer</strong> passionate about
+        building efficient, streamlined solutions for online businesses.
+        With a background in Computer Science and certifications in Make.com (Basics to Advanced), I create end-to-end
+        automation workflows,
+        integrate APIs, and develop Shopify solutions that save time and boost productivity.
+    </p>
+    <p style="font-size: 1.1rem; line-height: 1.6; margin-top: 20px;">
+        My recent projects include automating Shopify order processing to Google Sheets,
+        custom API integrations, and optimizing eCommerce operations.
+        Whether it’s automation logic, Shopify customization, or data management,
+        I aim to deliver solutions that work seamlessly — so you can focus on growth.
+    </p>
+</section>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I build automation workflows, Shopify integrations, and e-commerce solutions that save time and increase
-            efficiency.</p>
-    </section>
+<section class="certifications">
+    <h1 style="margin-bottom: 3%;">My Certifications</h1>
+    <div class="badge-container">
+        <a href="https://www.credly.com/badges/481bf178-d6b8-420b-99d0-f15eb5e0bd47/public_url" target="_blank">
+            <img src="images/Databases.png" alt="Certification 1">
+        </a>
+        <a href="https://www.credly.com/badges/c20afc2d-0e08-4b39-824d-ff055b135fd9/public_url" target="_blank">
+            <img src="images/HTML_and_CSS.png" alt="Certification 2">
+        </a>
+        <a href="https://www.credly.com/badges/4e2f067b-32bc-4ff9-8beb-5b2b115aad6f/public_url" target="_blank">
+            <img src="images/Make_Advanced.png" alt="Certification 3">
+        </a>
+        <a href="https://www.credly.com/badges/5cf260b6-8362-41c7-95e2-76b0c7942b5b/public_url" target="_blank">
+            <img src="images/Make_Intermediate.png" alt="Certification 4">
+        </a>
+    </div>
+</section>
 
-    <section id="work">
-        <h2>Work</h2>
-        <div class="work-grid">
-            <div class="work-item"><img src="images/project1.jpg">
-                <p>Shopify Order Automation</p>
+
+<section id="work">
+    <h2 style="font-size: 3.5rem; margin-bottom: 20px;color: #f5ee84;">Work.</h2>
+<div class="project left">
+    <div class="flip-card" onclick="this.classList.toggle('flip')">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+                <img src="images/conversion_sheet.png" alt="Scenario Image">
             </div>
-            <div class="work-item"><img src="images/project2.jpg">
-                <p>Google Sheets API Integration</p>
+            <div class="flip-card-back">
+                <img src="images/conversion_googlesheet.svg" alt="Google Sheet Image">
             </div>
         </div>
-    </section>
+    </div>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:kristhel@example.com">kristhel@example.com</a></p>
-        <p>LinkedIn: <a href="#">linkedin.com/in/kristhel</a></p>
+    <div class="project-text">
+        <h3>E-commerce Funnel Tracking Automation</h3>
+        <p>
+            <a href="https://foreverlily.de" target="_blank" style="text-decoration: underline; color:#03045e
+            ;">
+                ForeverLily
+            </a> - Germany based B2C
+        </p>
+
+        <p>Designed a daily automation that updates key funnel metrics — sessions, add-to-cart events, and conversions — in Google
+        Sheets by pulling data from Google Analytics and cross-referencing it with Shopify purchase metrics. This gave the
+        client an accurate, real-time view of campaign performance without manual reporting.</p>
+    </div>
+</div>
+
+    <div class="project right">
+    <div class="flip-card" onclick="this.classList.toggle('flip')">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+                <img src="images/draftorder_scenario.png" alt="Scenario Image">
+            </div>
+            <div class="flip-card-back">
+                <img src="images/order_confirmation.svg" alt="Google Sheet Image">
+            </div>
+        </div>
+    </div>
+    
+    <div class="project-text">
+        <h3>Multi-Sheet Shopify Order Processing Automation</h3>
+        <p>
+            <a href="https://hey.sun.frizbeeceramics.com/pages/ss25-campaign" target="_blank" style="text-decoration: underline; color:#03045e
+                ;">
+                Frizbee Ceramics
+            </a> - Belgium based B2B
+        </p>
+    
+        <p>Built a 51-module Make.com automation that extracts Shopify draft order data, splits it into relevant categories (Shape,
+        Glaze), and routes it to multiple Google Sheets — including client production sheets, order confirmation records, and
+        stock management. This system streamlined order processing, eliminated manual data entry, and improved real-time
+        inventory accuracy.</p>
+    </div>
+    </div>
+
+    <div class="project left">
+    <div class="flip-card" onclick="this.classList.toggle('flip')">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+                <img src="images/Foreverelily_frontend.svg" alt="Scenario Image">
+            </div>
+        </div>
+    </div>
+    
+    <div class="project-text">
+        <h3>Shopify Developer</h3>
+        <p>
+            <a href="https://foreverlily.de" target="_blank" style="text-decoration: underline; color:#03045e
+                ;">
+                ForeverLily
+            </a> - Germany based B2C
+        </p>
+    
+        <p>Customized Shopify themes with responsive UI features, integrated third-party apps to enhance checkout flows, and
+        optimized site performance for faster load times and improved user experience.</p>
+    </div>
+
+    </div>
+
+        <div class="project right">
+            <div class="flip-card" onclick="this.classList.toggle('flip')">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="images/POS_scenario.svg" alt="Scenario Image">
+                    </div>
+
+                </div>
+            </div>
+        
+            <div class="project-text">
+                <h3>Shopify POS to Pipedrive CRM Automation</h3>
+
+                <p>Developed a robust Make.com workflow for a private client’s Frankfurt boutique that automates customer and deal
+                management between Shopify POS and Pipedrive CRM. The automation triggers on new in-store orders, verifies and updates
+                customer records, manages deals to ensure one per customer, and creates follow-up activities for the sales team to
+                improve client engagement and sales tracking.</p>
+            </div>
+        </div>
+</section>
+
+
+    <section id="contact" style="text-align: center;">
+    <h2 style="font-size: 3.5rem; margin-bottom: 20px;color: #f5ee84;">Contact.</h2>
+        <p style="color:#03045e;">Email: <a style="color:#03045e;" href="mailto:kristhelsimon08@gmail.com">kristhelsimon08@gmail.com</a></p>
+        <p> Mobile Number: +63 960 229 9289</p>
+        <p> WhatsApp: +63 960 229 9289</p>
+
     </section>
 
     <footer>
@@ -88,6 +211,4 @@
 
 </body>
 
-
 </html>
-
