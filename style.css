@@ -215,3 +215,22 @@ footer {
 .flip-card-back {
     transform: rotateY(180deg);
 }   
+@media (max-width: 600px) {
+  .btn_border {
+    width: 90px;  /* smaller width */
+    height: 36px; /* smaller height */
+    border-width: 2px; /* thicker for visibility */
+    border-radius: 8px; /* slightly rounder */
+  }
+  
+  .btn {
+    font-size: 1rem;  /* smaller font */
+    padding: 8px 12px;
+  }
+  
+  /* Adjust container spacing if needed */
+  .btn-container {
+    margin: 10px auto;
+  }
+}
+
